@@ -1,0 +1,201 @@
+
+
+define largeCANDLE2WALL(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,1)
+	lightAttribOverride &lightName diffusionSourceMax (0,1)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .55
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define FireFlame(lightName)
+	lightAttribOverride &lightName intensity 1.2
+	lightAttribOverride &lightName falloffRate 1.5
+	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 3.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define FireTable(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 3.5
+	lightAttribOverride &lightName diffusionSourceIntensity .6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 3.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .75
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 350
+	lightAttribOverride &lightName conePenumbra 359
+enddef
+
+define largeCANDLEHIGH(lightName)
+#	lightAttribOverride &lightName intensity 1.3
+	lightAttribOverride &lightName intensity 2
+        lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#	lightAttribOverride &lightName falloffRate .8
+	lightAttribOverride &lightName falloffRate 3
+#	lightAttribOverride &lightName diffusionSourceIntensity 1.4
+	lightAttribOverride &lightName diffusionSourceIntensity 4
+        lightAttribOverride &lightName diffusionSourceColor (0.765, 0.4101, 0.009)
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+#	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceFalloff 5
+#	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 0.25
+#	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 0.25
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+
+###################TABLE
+
+#includes Elven table lamp by Lethe
+define 100WattTABLE(lightName)
+#	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName intensity 1
+#	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName falloffRate 2
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+#	lightAttribOverride &lightName diffusionSourceFalloff .7
+	lightAttribOverride &lightName diffusionSourceFalloff 4
+#	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+# includes Adele candles, posebox candle
+define 60WattTABLE(lightName)
+#	#lightAttribOverride &lightName intensity 1.4
+	lightAttribOverride &lightName intensity 1
+#	#lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName falloffRate 1.8
+#	#lightAttribOverride &lightName diffusionSourceIntensity 1.52
+	lightAttribOverride &lightName diffusionSourceIntensity 1.4
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+#	#lightAttribOverride &lightName diffusionSourceFalloff .8
+	lightAttribOverride &lightName diffusionSourceFalloff 5
+#	#lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1
+#	#lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+define 45WattTABLE(lightName)
+	lightAttribOverride &lightName intensity 1.35
+	lightAttribOverride &lightName falloffRate .95
+	lightAttribOverride &lightName diffusionSourceIntensity 1.25
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.5
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+# includes temple wall light
+define 60WattWALL(lightName)
+#	lightAttribOverride &lightName intensity 1.7
+	lightAttribOverride &lightName intensity 1
+#	lightAttribOverride &lightName falloffRate .85
+	lightAttribOverride &lightName falloffRate 2.85
+#	lightAttribOverride &lightName diffusionSourceIntensity 1.7
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
+	lightAttribOverride &lightName diffusionSourceMax (0,.5)
+#	lightAttribOverride &lightName diffusionSourceFalloff 1
+	lightAttribOverride &lightName diffusionSourceFalloff 4
+#	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+
+#includes antler-like 2-candle wall lamp
+define 100WattWALL(lightName)
+	lightAttribOverride &lightName intensity 1
+	lightAttribOverride &lightName falloffRate .9
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,.5)
+	lightAttribOverride &lightName diffusionSourceMax (0,.5)
+	lightAttribOverride &lightName diffusionSourceFalloff 4
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.6
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+
+# Includes Medieval Chandelier 01 by Neosiris
+define 75WattOVER(lightName)
+	lightAttribOverride &lightName intensity 1.0
+	lightAttribOverride &lightName falloffRate .9 #.5
+	lightAttribOverride &lightName diffusionSourceIntensity 1.6
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 4
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 2
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale .8
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+
+# Fogueria Ponto campfire (lightingFloorGardenTier_light)
+define 25WattFENCE(lightName)
+	lightAttribOverride &lightName intensity 1.5
+	lightAttribOverride &lightName falloffRate 1.25
+	lightAttribOverride &lightName diffusionSourceIntensity 1
+	lightAttribOverride &lightName diffusionSourceMin  (0,0)
+	lightAttribOverride &lightName diffusionSourceMax (0,0)
+	lightAttribOverride &lightName diffusionSourceFalloff 4.2
+	lightAttribOverride &lightName diffusionSourceWallIntensityScale 1.33
+	lightAttribOverride &lightName diffusionSourceFloorIntensityScale 1.33
+	lightAttribOverride &lightName diffusionSourceIsDirectional 0
+	lightAttribOverride &lightName diffusionSourceDirectionalFalloff 0
+	lightAttribOverride &lightName coneAngle 999
+	lightAttribOverride &lightName conePenumbra 999
+enddef
+

@@ -1,0 +1,233 @@
+###################################################################
+
+         LOTHERE LIGHTING MOD for TS2 (requires Seasons)
+                 version 0.01 - Nov. 24 2011
+
+This set of files is an add-on to Gunmod's Radiance Lighting and
+Almighty Hat's World Lit By Fire extension.
+
+These are some of the lighting settings that I use for 
+illustrating my Sims 2 story at http://www.lothere.com/
+
+This package should be considered experimental and unsupported
+because I am constantly modifying it for my own needs.
+
+It overrides a lot of in-game lights to make them look like 
+candlelight, since many CC candles are derived from EAxis lights
+that aren't candles.  So you may not want to use it if you 
+frequently play modern hoods as well as pre-electricity hoods.
+
+It is recommended more for storytellers and picture-takers than
+for game-players because it is...
+
+                    -**  VERY VERY DARK. **-
+
+You will find yourself tripling the number of candles and lamps
+in your houses, because IT IS VERY VERY DARK.
+
+However, it's easy to remove from your game if you don't like it,
+and you can disable and reenable it while the game is open.
+
+I am also almost positive (though I will not guarantee) that it
+will not break your game.  If there's an "error" in these files,
+the game will just skip them.
+
+###################################################################
+
+                            CONTENTS
+
+###################################################################
+
+I. Light Parameter Overrides
+
+This set contains several files that override certain settings 
+in Radiance lighting. These files end in .txt, and they are named
+after the files whose settings they replace, e.g. 
+Lothere-LightKelvin.txt overrides settings in RLS-LightKelvin.txt.
+
+This way you don't need to overwrite the Radiance/AWLBF files,
+and you can easily enable/disable the entire Lothere lighting mod.
+
+II. Individual Lamp Overrides
+
+It also contains a file that selectively changes the lighting
+parameters for certain individual lights.  This file is called
+Lothere-Individual_Overrides.nlo.  This file is optional. (I will
+explain how to enable it or not below.)  Some of the candles will 
+be more dramatic with it, and I override some lamps to change 
+their color completely.  (For instance, the Moroccan-style table 
+lamp now casts a red light because I only use that lantern with 
+the red glass anyway.)
+
+III. Lot Lighting Files
+
+Finally, I include one (or more) files that can be used with
+the "setLotLightingFile" cheat to *totally* change the lights on
+a lot for dramatic effect.  These files end in .lot.  For instance
+Night.lot makes an almost pitch black night inside and outside.
+Great for pictures, horrible for playing or decorating.
+
+###################################################################
+
+                          INSTALLATION
+
+###################################################################
+
+1. Go to http://hat-plays-sims.dreamwidth.org/18044.html and
+   follow Hat's instructions to install Radiance Lighting and 
+   Hat's own A World Lit By Fire mod.  She explains this process 
+   very well.
+
+2. Extract the contents of the Lothere_Lighting_Mod.rar file.
+   It should contain one folder called "Lothere".  Inside that
+   folder, there should be several files that have the file
+   extensions .nlo, .txt, and .lot, as well as this README file.
+
+3. Copy the ENTIRE "Lothere" folder to your Lights folder, namely:
+
+     C:/Program Files/EA Games/The Sims 2/TSData/Res/Lights 
+
+   This is the same place where you installed Radiance Lighting.
+
+   If you do this correctly, your Lights folder should contain
+   a folder called "Lothere" along with some game folders
+   called "cas", "LightRigs", "objects", "windows", and maybe
+   others.
+
+   You do *not* want to copy the *contents* of the Lothere folder
+   to the Lights folder.  (My instructions will not work if you
+   do.)  The files should all live in their own folder. It will
+   be easier to update or uninstall this way, too.
+
+4. If you *only* want to use the individual lot lighting (.lot) 
+   files, you don't need to do anything else.  If you want the 
+   full effect of this lighting mod, you have to tell Radiance 
+   Lighting to load it.  Here's how:
+
+   Using Notepad, open the file "RLS-Main.txt" that is in your
+   Lights folder.
+
+   Towards the very beginning, right after the line 
+   "setf wPenMul  20", you should add the following line (on a 
+   line of its own):
+
+
+   wildInclude "Lothere/*.txt"
+
+   
+   This will enable the main light parameter overrides (section
+   I. above).  It must come before all the "include "RLS-Blah.txt"
+   lines in this file, otherwise it won't do very much at all.
+   (That is, it must be read before the Radiance Lighting RLS 
+   files.)
+   
+   If you also want the individual overrides (section II. above):
+   then scroll to the very bottom of the file, and below the section
+   heading "Custom Lights" add the following line:
+   
+   
+   wildInclude "Lothere/*.nlo"
+   
+   
+###################################################################
+
+                             USAGE
+
+###################################################################
+
+Now start your game.  If you have successfully followed the above 
+steps, a room without windows should be VERY VERY DARK, and most
+of your candles should cast a light that is quite orange instead
+of Hat's pale gold.
+
+If you are horrified and want to disable it, you do not have to
+quit your game to do so.  ALT-TAB away from the game and open the
+RLS-Main.txt file in Notepad.  Put a "#" symbol in front of the
+two lines that you just added.  This will disable them.
+
+Now, switch back to the game and tell it to reload the lights. 
+Bring up the cheat window with SHIFT+CTRL+C and type the following
+cheat:
+
+setLotLightingFile clear
+
+This will reload all the lighting files, and since the Lothere
+files are now disabled, you should have your ordinary 
+Radiance/AWLBF lighting back.
+
+You can switch back and forth this way whenever you want while the
+game is running.  For example, do your building with the Lothere
+lighting mod disabled, and switch it on to take your pictures.
+(After you hurriedly add a ton more candles, because you discover
+how dark it is.)
+
+To use the Lot Lighing Files (the ones that end in .lot) you also
+use the setLotLightingFile cheat.  But instead of "clear" you would
+type something like this:
+
+setLotLightingFile Lothere\Night.lot
+
+(Note that this cheat does not seem to reliably work when it's 
+actually nighttime in-game.  I take all my nighttime chapters 
+during the game day, using the Night.lot file.  I use a buyable 
+sky to hide the bright Sims sky.)
+
+When you are done with the "Night.lot" settings, you can type:
+
+setLotLightingFile clear
+
+again, and that will put you back to the regular lighting.
+
+###################################################################
+
+                       HOW TO UNINSTALL
+
+###################################################################
+
+1. Remove the "include" lines you added to RLS-Main.txt.  See step 
+   4 in the instructions above.  Or, just get the original
+   RLS-Main.txt file from Radiance Lighting and overwrite your file.
+   
+2. Delete the Lothere folder that is in your Lights directory.  See
+   step 3 in the instructions above.
+   
+3. Restart your game, or just use the cheat:
+
+   setLotLightingFile clear
+
+###################################################################
+
+                            HELP!!
+
+###################################################################
+
+I said above that this mod should be considered experimental and
+unsupported.  This isn't a nice, tidy, well-documented, ready-for-
+prime-time mod like Hat's AWLBF is... it's just me sharing my 
+partially completed lighting files after many requests.
+
+However, if you are stumped and need assistance, you can post on 
+my forum (http://www.lothere.com/forum), send me a PM at the 
+Plumb Bob Keep, or send an email to lighting@lothere.com.
+I will help you if I can, but do keep in mind I only have access 
+to my game on weekends.
+
+In case it matters, I have all the EPs except for FreeTime and 
+the Stuff Packs.  I can't guarantee all this will work if you 
+don't have these EPs.  I am almost certain you need Seasons, 
+though.
+
+Also, these are *my* game settings, and I won't entertain requests
+like "Can you make it a little lighter?" because then it's no good
+for me any more.  However, I might be able to explain how you can 
+modify *your* files to make things lighter.
+
+###################################################################
+
+                            TERMS
+
+###################################################################
+
+You are free to do whatever you want with these files, including 
+making your own mods based on them and distributing them.
+

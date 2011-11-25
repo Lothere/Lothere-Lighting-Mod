@@ -1,0 +1,30 @@
+######################################################################
+
+# Added by Jenny 2008-01-20
+create largeCANDLE2(lightingwallmoroccan_light)
+create matchflame(lightingwallmoroccan_light)
+######################################################################
+
+# Added by Jenny 2008-01-20
+create largeCANDLEHIGH(lightingtableloftshoji_light)
+create candleflame(lightingtableloftshoji_light)
+######################################################################
+
+# Added by Jenny 2008-01-20
+create largeCANDLEHIGH(lightingflooreuro_light)
+create candleflame(lightingflooreuro_light)
+######################################################################
+
+# Added by Jenny 2008-01-20
+create largeCANDLEHIGH(lightingceilingcentralasian_light)
+create candleflame(lightingceilingcentralasian_light)
+######################################################################
+
+# Added by Jenny 2008-01-20
+#create largeCANDLEHIGH(sculptureTableCandleCollection_light)
+#create candleflame(sculptureTableCandleCollection_light)
+######################################################################
+
+# Added by Jenny 2008-01-20
+create largeCANDLEHIGH(lightingTableUpscaleRestaurant_light)
+create candleflame(lightingTableUpscaleRestaurant_light)

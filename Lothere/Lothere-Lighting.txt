@@ -1,0 +1,153 @@
+
+	set sim:roomOverallStrength 		1.4 #from 1 by JvH
+
+
+####################################################
+# Season - Summer
+#
+lightingState day
+   control -edith true
+
+   skylight                      (.95,.95,.90)  0.4 #overall mostly shadow
+
+   # inside diffusion
+   diffParam insideAmbientColor       (.85, .75, .75)  
+   diffParam insideFloorAmbient 0.001
+   diffParam insideWallAmbient  0.001  
+   
+   modifiers insidePortals       1.5  .5          1.3    3
+   modifiers insidePortalSpills   1.2     1.2         .3    2  #### check after incremental
+
+end
+
+
+####################################################
+# Season - Winter
+#
+lightingState Winter
+   control -edith true
+
+   # outside direct lighting
+   
+   skylight                      (1,1,1)  0.3 #overall mostly shadow - below (1,1,1) 0.3 
+                                              # this was making my snowy
+                                              # windowsills glow blueish
+
+   light sun      (1.5, 1.2, 1.65)    (.89, .88, 0.92)     0.23
+   light sky      (-1.5, -1.2, 2)  (.87,.95,0.93)    .5
+   light fill1    (1, 1, -1)     (1,1,1)    .2
+
+   light simFill1  (1, -1.2, .9) (.91, .92, 1)  .5
+   light simFill2  (-2, 2, .9) (.91, .95, 1)  1.05
+
+   # inside diffusion
+   diffParam insideAmbientColor       (.85, .75, .75)  
+   diffParam insideFloorAmbient         0.02 
+   diffParam insideWallAmbient          0.02
+   
+   # diffusion inside and outside
+   diffParam floorThreshold           .2
+   diffParam wallThreshold            .1
+
+   # temporarily change sun position to redraw shadows with new value   
+   projectiveShadowStrength 0.7
+
+   # modifiers <type> <practicalStrength:float> <diffusionStrength:float> [<practicalFalloff:float> <diffusionFalloff:float>] 
+
+   modifiers insidePortals       1.5  .5          1.3    3
+   modifiers insidePortalSpills   1.2     1.2         .3    2  #### check after incremental
+   modifiers outsidePortals      0       0          1           1
+   modifiers outsidePortalSpills 0       0          1           1
+
+   #                         pract. diffuse  p. falloff  d. falloff
+   modifiers insideObjects      .75   .20    .2     .3
+   modifiers outsideObjects    .2      .25     .085 .09
+
+   # taken from Night.txt -- the originals are above
+#   modifiers insideObjects      2.9   .45   1.2     0.4
+#   modifiers outsideObjects     2   1.4  1.2   1.2
+
+
+   # extra ambient for unlit rooms.
+   #dim candles
+   unlitRoomColor (0.1, 0.05, 0.0125) -threshold .5
+   # no light
+   #unlitRoomColor (0.05, 0.05, 0.06) -threshold .5
+
+end
+
+
+####################################################
+# Season - Spring
+#
+lightingState Spring
+   control -edith true
+
+
+
+
+   skylight                      (1,.98,.92)  0.4 #overall mostly shadow
+
+   # JvH changed the blue to get a more golden color indoors
+   light sun      (-1.0, 1.5, 1.48)    (0.9, 0.88, 0.85)     1.65 #main light
+
+   light sky      (1.5, -1.2, 2)  (1,.99,.75)    .35 #shadow
+
+
+   # inside diffusion
+   diffParam insideAmbientColor       (.85, .75, .75)  
+   diffParam insideFloorAmbient         0.02  
+   diffParam insideWallAmbient          0.02  
+   
+   # diffusion inside and outside
+   diffParam floorThreshold           .3
+   diffParam wallThreshold            .3
+   
+
+   # modifiers <type> <practicalStrength:float> <diffusionStrength:float> [<practicalFalloff:float> <diffusionFalloff:float>] 
+   
+   #                           pract. diffuse  p. falloff  d. falloff
+   modifiers insidePortals        1.5     1.5      2         3
+   modifiers insidePortalSpills   1.32    1.2      2         1
+   modifiers outsidePortals       0       0        1         1
+   modifiers outsidePortalSpills     0     0      1     1
+
+   #                         pract. diffuse  p. falloff  d. falloff
+   modifiers insideObjects      .85   .5           .1     .5
+   modifiers outsideObjects    .2      .25     .085 .09
+
+   # extra ambient for unlit rooms.
+   unlitRoomColor (.09, .09, .11) -threshold .4
+
+end
+
+####################################################
+# Season - Autumn
+#
+lightingState Autumn
+
+   skylight                      (1,.90,.90)  0.4 #overall mostly shadow
+
+   light sun      (1.6, 1.5, 1.54)    (.987, .933, .771)     1.65 #main light
+
+
+   # inside diffusion
+   diffParam insideAmbientColor       (.85, .75, .75)
+   diffParam insideFloorAmbient         0.001
+   diffParam insideWallAmbient          0.001
+   
+   # diffusion inside and outside
+   diffParam floorThreshold           .4
+   diffParam wallThreshold            .4
+   
+
+   # modifiers <type> <practicalStrength:float> <diffusionStrength:float> [<practicalFalloff:float> <diffusionFalloff:float>] 
+   
+   #                           pract. diffuse  p. falloff  d. falloff
+   modifiers insidePortalSpills   1.18    1.45      .42     .88
+
+
+   # extra ambient for unlit rooms.
+   unlitRoomColor (.09, .09, .11) -threshold .4
+
+end

@@ -1,0 +1,4 @@
+# Preventek Lumilight Street Light #
+create mediumSTREETLIGHT(lightingStreetlight_light)
+create streetlightyellow(lightingStreetlight_light)
+######################################################################

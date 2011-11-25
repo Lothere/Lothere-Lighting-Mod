@@ -1,0 +1,42 @@
+
+define Halogen(lightName)
+lightAttribOverride &lightName  intensity 0
+#lightAttribOverride &lightName  color (1.0, 0.93, 0.75)
+lightAttribOverride &lightName  falloffRate 2.5
+lightAttribOverride &lightName  diffusionSourceIntensity .2
+#lightAttribOverride &lightName  diffusionSourceColor (1.0, .9, 0.8)
+
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+
+lightAttribOverride &lightName  diffusionSourceMin (-.5, 0)
+lightAttribOverride &lightName  diffusionSourceMax (.5, .5)
+lightAttribOverride &lightName  diffusionSourceFalloff 2
+lightAttribOverride &lightName  diffusionSourceWallIntensityScale 1
+lightAttribOverride &lightName  diffusionSourceFloorIntensityScale 1
+lightAttribOverride &lightName  diffusionSourceIsDirectional 0
+lightAttribOverride &lightName  diffusionSourceDirectionalFalloff 1
+lightAttribOverride &lightName  coneAngle 30
+enddef
+
+####################
+
+define Halogen2(lightName)
+lightAttribOverride &lightName  intensity 0
+#lightAttribOverride &lightName  color (1.0, 0.93, 0.75)
+lightAttribOverride &lightName  falloffRate 2.5
+lightAttribOverride &lightName  diffusionSourceIntensity .6
+#lightAttribOverride &lightName  diffusionSourceColor (1.0, .9, 0.8)
+
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+
+lightAttribOverride &lightName  diffusionSourceMin (-.5, 0)
+lightAttribOverride &lightName  diffusionSourceMax (.5, .5)
+lightAttribOverride &lightName  diffusionSourceFalloff 1.5
+lightAttribOverride &lightName  diffusionSourceWallIntensityScale 1
+lightAttribOverride &lightName  diffusionSourceFloorIntensityScale 1
+lightAttribOverride &lightName  diffusionSourceIsDirectional 0
+lightAttribOverride &lightName  diffusionSourceDirectionalFalloff 1
+lightAttribOverride &lightName  coneAngle 30
+enddef

@@ -1,0 +1,524 @@
+# Parameter Name Min Max
+# ------------------------------------------------
+# intensity n 0 12
+# color (R,G,B) 0 1
+# falloffRate n 0 5
+# coneAngle n 0 150 (degrees)
+# conePenumbra n 0 55 (degrees)
+# range n 1000 1000
+# diffusionSourceIntensity n 0 3.5
+# diffusionSourceColor (R,G,B) 0 1
+# diffusionSourceFalloff n 0.5 15
+# diffusionSourceMin (x, y) -0.5 0.2
+# diffusionSourceMax (x, y) 0 2
+# diffusionSourceFloorIntensityScale n 0.5 1
+# diffusionSourceWallIntensityScale n 0.9 1.5
+# diffusionSourceIsDirectional n 0 1 (boolean)
+# diffusionSourceDirectionalFalloff n 0 1 (boolean)
+# 
+# 
+# Intensity / DiffusionSourceIntensity - Self-explanatory; usually this value ranges from 0 (= no light) to 1 (= normal light); in some rare cases is 5 or even 12.
+# Color / DiffusionSourceColor - Self-explanatory; these parameters are useful to tweak the intensity, too: a value of 0.5,0.5,0.5 will produce a white light, but less bright than 1,1,1.
+# FallOffRate / diffusionSourceFalloff - Define how quickly the light will stop being visible; normal value = 0.5; (0 = infinite: the light will hit even extremely distant objects; high values = the light will hit only close objects).
+# ConeAngle / ConePenumbra - These values (expressed in degrees) represent the ray of the light cone, and the ray of the additional penumbra cone that surrounds the light cone. The sum of the two rays must be less than, or equal to, 180°.
+# DiffusionSourceFloorIntensityScale / DiffusionSourceWallIntensityScale - These are multipliers that define how much walls and floors reflect the light; usually, their value is 1 (= normal reflectivity); values less than 1 attenuate the reflectivity.
+# (All the remaning attributes are unknown to me)
+# 
+
+lightAttribOverride lightingfloortikitorch_light intensity 0.5
+lightAttribOverride lightingfloortikitorch_light color (0.878, 0.438, 0.109)
+lightAttribOverride lightingfloortikitorch_light falloffRate 1
+lightAttribOverride lightingfloortikitorch_light diffusionSourceIntensity 0.05
+lightAttribOverride lightingfloortikitorch_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingfloortikitorch_light diffusionSourceFalloff 5
+lightAttribOverride lightingfloortikitorch_light diffusionSourceWallIntensityScale 0.2
+lightAttribOverride lightingfloortikitorch_light diffusionSourceFloorIntensityScale 0.05
+lightAttribOverride lightingfloortikitorch_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingfloortikitorch_light diffusionSourceDirectionalFalloff 0
+
+# Old wall torch, Small, tall wall stained glass silversmith light. Candid candleholder.
+# Candles for Canoodle (square tray with fat candles)
+# Darken castle torch.
+# The Camelot wall light by Simoly
+# "Candles 01" twin wall candles
+# This one is nice -- orange and good for face shots.  Don't change.
+lightAttribOverride lightingwallcolonial_light intensity 1.2
+#lightAttribOverride lightingwallcolonial_light color  (0.778, 0.438, 0.109)
+lightAttribOverride lightingwallcolonial_light falloffRate .7
+lightAttribOverride lightingwallcolonial_light diffusionSourceIntensity 2
+lightAttribOverride lightingwallcolonial_light diffusionSourceColor  (0.765, 0.4101, 0.009)
+#lightAttribOverride lightingwallcolonial_light diffusionSourceMin  (0,0)
+#lightAttribOverride lightingwallcolonial_light diffusionSourceMax (0,0)
+lightAttribOverride lightingwallcolonial_light diffusionSourceFalloff 3
+#lightAttribOverride lightingwallcolonial_light diffusionSourceWallIntensityScale 0.8 
+#lightAttribOverride lightingwallcolonial_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingwallcolonial_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingwallcolonial_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingwallcolonial_light coneAngle 999
+lightAttribOverride lightingwallcolonial_light conePenumbra 999
+
+
+# Includes the oil lamp, Reflex_AsiaStyle_Candels (long tray of red candles), 
+# the hanging 2-story chandeliers, Sunni's standing braziers
+lightAttribOverride lightingTableMedieval_light intensity 2
+#lightAttribOverride lightingTableMedieval_light color  (0.778, 0.438, 0.109)
+#lightAttribOverride lightingTableMedieval_light falloffRate 2
+#lightAttribOverride lightingTableMedieval_light diffusionSourceIntensity 4
+#lightAttribOverride lightingTableMedieval_light diffusionSourceColor  (0.765, 0.4101, 0.009)
+#lightAttribOverride lightingTableMedieval_light diffusionSourceMin  (0,0)
+#lightAttribOverride lightingTableMedieval_light diffusionSourceMax (0,0)
+#lightAttribOverride lightingTableMedieval_light diffusionSourceFalloff 1
+#lightAttribOverride lightingTableMedieval_light diffusionSourceWallIntensityScale 0.25
+#lightAttribOverride lightingTableMedieval_light diffusionSourceFloorIntensityScale 0.25
+#lightAttribOverride lightingTableMedieval_light diffusionSourceIsDirectional 0
+#lightAttribOverride lightingTableMedieval_light diffusionSourceDirectionalFalloff 0
+
+
+# includes Castle Walltorch by Seed
+#lightAttribOverride lightingWallMedieval_light intensity 1
+#lightAttribOverride lightingWallMedieval_light color  (0.965, 0.4101, 0.009)
+lightAttribOverride lightingWallMedieval_light falloffRate 3
+#lightAttribOverride lightingWallMedieval_light diffusionSourceIntensity 3
+#lightAttribOverride lightingWallMedieval_light diffusionSourceColor  (0.765, 0.4101, 0.009)
+#lightAttribOverride lightingWallMedieval_light diffusionSourceMin  (0,0)
+#lightAttribOverride lightingWallMedieval_light diffusionSourceMax (0,0)
+lightAttribOverride lightingWallMedieval_light diffusionSourceFalloff 4
+#lightAttribOverride lightingWallMedieval_light diffusionSourceWallIntensityScale 0.2
+#lightAttribOverride lightingWallMedieval_light diffusionSourceFloorIntensityScale 0.2
+#lightAttribOverride lightingWallMedieval_light diffusionSourceIsDirectional 0
+#lightAttribOverride lightingWallMedieval_light diffusionSourceDirectionalFalloff 0
+
+# Enable for outside use
+#lightAttribOverride lightingWallMedieval_light intensity 2
+#lightAttribOverride lightingWallMedieval_light falloffRate 4
+#lightAttribOverride lightingWallMedieval_light diffusionSourceIntensity 4
+#lightAttribOverride lightingWallMedieval_light diffusionSourceColor  (0.665, 0.4601, 0.1)
+#lightAttribOverride lightingWallMedieval_light diffusionSourceWallIntensityScale 0.6
+#lightAttribOverride lightingWallMedieval_light diffusionSourceFloorIntensityScale 0.1
+
+
+# includes that one ceiling chandelier and the imperial table candles
+lightAttribOverride lightingFloorMedieval_light intensity 2
+lightAttribOverride lightingFloorMedieval_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingFloorMedieval_light falloffRate 3
+lightAttribOverride lightingFloorMedieval_light diffusionSourceIntensity 1.5
+lightAttribOverride lightingFloorMedieval_light diffusionSourceColor  (0.848, 0.468, 0.109)
+lightAttribOverride lightingFloorMedieval_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingFloorMedieval_light diffusionSourceMax (0,0)
+lightAttribOverride lightingFloorMedieval_light diffusionSourceFalloff 3
+lightAttribOverride lightingFloorMedieval_light diffusionSourceWallIntensityScale 0.6
+lightAttribOverride lightingFloorMedieval_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingFloorMedieval_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingFloorMedieval_light diffusionSourceDirectionalFalloff 0
+
+lightAttribOverride lightingtableloftshoji_light intensity 0.9
+# lightAttribOverride lightingtableloftshoji_light color (0.914, 0.551, 0.281)
+lightAttribOverride lightingtableloftshoji_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingtableloftshoji_light falloffRate 3
+lightAttribOverride lightingtableloftshoji_light diffusionSourceIntensity 6
+# lightAttribOverride lightingtableloftshoji_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride lightingtableloftshoji_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingtableloftshoji_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingtableloftshoji_light diffusionSourceMax (0,0)
+lightAttribOverride lightingtableloftshoji_light diffusionSourceFalloff 2
+lightAttribOverride lightingtableloftshoji_light diffusionSourceWallIntensityScale 0.02
+lightAttribOverride lightingtableloftshoji_light diffusionSourceFloorIntensityScale 0.01
+lightAttribOverride lightingtableloftshoji_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingtableloftshoji_light diffusionSourceDirectionalFalloff 0
+
+lightAttribOverride lightingtablequaint_light intensity 0.7
+# lightAttribOverride lightingtablequaint_light color (0.914, 0.551, 0.281)
+lightAttribOverride lightingtablequaint_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingtablequaint_light falloffRate 3
+lightAttribOverride lightingtablequaint_light diffusionSourceIntensity 1.02
+# lightAttribOverride lightingtablequaint_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride lightingtablequaint_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingtablequaint_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingtablequaint_light diffusionSourceMax (0,0)
+lightAttribOverride lightingtablequaint_light diffusionSourceFalloff 8
+lightAttribOverride lightingtablequaint_light diffusionSourceWallIntensityScale 0.02
+lightAttribOverride lightingtablequaint_light diffusionSourceFloorIntensityScale 0.01
+lightAttribOverride lightingtablequaint_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingtablequaint_light diffusionSourceDirectionalFalloff 0
+
+# This is used to give the moroccan "nothing special" lamp a red glow
+# so I can use it as a lantern on the tabernacle
+lightAttribOverride lightingtablemoroccan_light intensity 0.9
+lightAttribOverride lightingtablemoroccan_light color  (0.878, 0.08, 0.009)
+lightAttribOverride lightingtablemoroccan_light falloffRate 3
+lightAttribOverride lightingtablemoroccan_light diffusionSourceIntensity 5
+lightAttribOverride lightingtablemoroccan_light diffusionSourceColor  (0.878, 0.008, 0.009)
+lightAttribOverride lightingtablemoroccan_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingtablemoroccan_light diffusionSourceMax (0,0)
+lightAttribOverride lightingtablemoroccan_light diffusionSourceFalloff 6
+lightAttribOverride lightingtablemoroccan_light diffusionSourceWallIntensityScale 0.2
+lightAttribOverride lightingtablemoroccan_light diffusionSourceFloorIntensityScale .2
+lightAttribOverride lightingtablemoroccan_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingtablemoroccan_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingtablemoroccan_light coneAngle 999
+lightAttribOverride lightingtablemoroccan_light conePenumbra 999
+
+
+lightAttribOverride lightingwallmoroccan_light intensity 0.9
+# lightAttribOverride lightingwallmoroccan_light color (0.914, 0.551, 0.281)
+lightAttribOverride lightingwallmoroccan_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingwallmoroccan_light falloffRate 3
+lightAttribOverride lightingwallmoroccan_light diffusionSourceIntensity 1.05
+# lightAttribOverride lightingwallmoroccan_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride lightingwallmoroccan_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingwallmoroccan_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingwallmoroccan_light diffusionSourceMax (0,0)
+lightAttribOverride lightingwallmoroccan_light diffusionSourceFalloff 6
+lightAttribOverride lightingwallmoroccan_light diffusionSourceWallIntensityScale 0.05
+lightAttribOverride lightingwallmoroccan_light diffusionSourceFloorIntensityScale .05
+lightAttribOverride lightingwallmoroccan_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingwallmoroccan_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingwallmoroccan_light coneAngle 999
+lightAttribOverride lightingwallmoroccan_light conePenumbra 999
+
+lightAttribOverride lightingflooreuro_light intensity 1
+# lightAttribOverride lightingflooreuro_light color (0.914, 0.551, 0.281)
+lightAttribOverride lightingflooreuro_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingflooreuro_light falloffRate 3
+lightAttribOverride lightingflooreuro_light diffusionSourceIntensity 1.05
+# lightAttribOverride lightingflooreuro_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride lightingflooreuro_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingflooreuro_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingflooreuro_light diffusionSourceMax (0,0)
+lightAttribOverride lightingflooreuro_light diffusionSourceFalloff 6
+lightAttribOverride lightingflooreuro_light diffusionSourceWallIntensityScale 0.2
+lightAttribOverride lightingflooreuro_light diffusionSourceFloorIntensityScale .08
+lightAttribOverride lightingflooreuro_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingflooreuro_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingflooreuro_light coneAngle 999
+lightAttribOverride lightingflooreuro_light conePenumbra 999
+
+#includes a steffan light
+lightAttribOverride lightingceilingcentralasian_light intensity 2
+lightAttribOverride lightingceilingcentralasian_light color (0.074, 0.551, 0.981)
+lightAttribOverride lightingceilingcentralasian_light falloffRate 3
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceIntensity 2
+# lightAttribOverride lightingceilingcentralasian_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceColor  (0.074, 0.551, 0.981)
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceMax (0,0)
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceFalloff 3
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceWallIntensityScale 0.5
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingceilingcentralasian_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingceilingcentralasian_light coneAngle 999
+lightAttribOverride lightingceilingcentralasian_light conePenumbra 999
+
+
+
+# I think the elves' candle uses this, and various sculptural multi-candles definitely do.
+# Also the new tea lights. the lamp/candle in a bowl, and the Single Taper Candle which Gwynn carried upstairs
+# (Some of these?) candles do not seem to give off any diffusion light.
+lightAttribOverride sculptureTableCandleCollection_light intensity 1.0
+#lightAttribOverride sculptureTableCandleCollection_light intensity 0.7
+lightAttribOverride sculptureTableCandleCollection_light falloffRate 2
+lightAttribOverride sculptureTableCandleCollection_light diffusionSourceIntensity 0.9
+lightAttribOverride sculptureTableCandleCollection_light diffusionSourceFalloff 4
+#lightAttribOverride sculptureTableCandleCollection_light diffusionSourceWallIntensityScale 0.02
+#lightAttribOverride sculptureTableCandleCollection_light diffusionSourceFloorIntensityScale 0.01
+
+# this is the gold-colored glass lantern (like Alred's green)
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight intensity 1.5
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight falloffRate 3
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceIntensity 5
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceMin  (0,0)
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceMax (0,0)
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceFalloff 4
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceWallIntensityScale 0.02
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceFloorIntensityScale 0.01
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceIsDirectional 0
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight coneAngle 999
+lightAttribOverride lightingTableBrasserie_glass_amber_lit_designModeLight conePenumbra 999
+
+
+# this is the diamon-paned glass lantern (like Alred's green)
+lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight intensity 1.5
+lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight color  (0.978, 0.238, 0.009)
+lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight falloffRate 4
+lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceIntensity 1.5
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceColor  (0.878, 0.238, 0.019)
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceMin  (0,0)
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceMax (0,0)
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceFalloff 4
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceWallIntensityScale 0.02
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceFloorIntensityScale 0.01
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceIsDirectional 0
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight diffusionSourceDirectionalFalloff 0
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight coneAngle 999
+#lightAttribOverride lightingTableBrasserie_glass_diamond_lit_designModeLight conePenumbra 999
+
+
+# Includes the Arabian gold lamp (the expensive one)
+# I think this includes the little christmas light
+lightAttribOverride lightingTableUpscaleRestaurant_light intensity 0.6
+lightAttribOverride lightingTableUpscaleRestaurant_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingTableUpscaleRestaurant_light falloffRate 1
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceIntensity 1.15
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceMax (0,0)
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceFalloff 4
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceFloorIntensityScale 0.8
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingTableUpscaleRestaurant_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingTableUpscaleRestaurant_light coneAngle 999
+lightAttribOverride lightingTableUpscaleRestaurant_light conePenumbra 999
+
+#hanging elven lamp
+lightAttribOverride lightingCeilingMoroccan_light intensity 1
+lightAttribOverride lightingCeilingMoroccan_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingCeilingMoroccan_light falloffRate 3
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceIntensity 5
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceColor  (0.778, 0.468, 0.109)
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceMax (0,0)
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceFalloff 6
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingCeilingMoroccan_light diffusionSourceDirectionalFalloff 0
+
+lightAttribOverride lightingCeilingHangingSunLamp_light intensity 1
+lightAttribOverride lightingCeilingHangingSunLamp_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingCeilingHangingSunLamp_light falloffRate 3
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceIntensity 5
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceColor  (0.778, 0.468, 0.109)
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceMax (0,0)
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceFalloff 6
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingCeilingHangingSunLamp_light diffusionSourceDirectionalFalloff 0
+
+lightAttribOverride lightingFenceCentralAsian_light intensity 1
+lightAttribOverride lightingFenceCentralAsian_light color  (0.878, 0.438, 0.109)
+lightAttribOverride lightingFenceCentralAsian_light falloffRate 3
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceIntensity 3
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceColor  (0.778, 0.468, 0.109)
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceMax (0,0)
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceFalloff 6
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceIsDirectional 0
+lightAttribOverride lightingFenceCentralAsian_light diffusionSourceDirectionalFalloff 0
+
+
+# Parsimonious imperial lights lighting file names
+# (some use medieval floor)
+# k8-imperialceilinglamp-050808_light
+# k8-imperialduowalllamp-050808_light
+# k8-imperialwalllantern-050808_light
+# k8-imperialwalllamp-050808_light
+# k8-imperialwalllampsimple-050808_light 
+
+# This is the yellow light disk Lunatech
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight intensity 0.25
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight color  (0.878, 0.438, 0.109)
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight falloffRate 1
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceIntensity 0.8
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceColor  (0.678, 0.468, 0.109)
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceMin  (0,0)
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceMax (0,0)
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceFalloff 6
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceFloorIntensityScale .5
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceIsDirectional 0
+lightAttribOverride lightWallNightClubDisk_disk_amber_lit_designModeLight diffusionSourceDirectionalFalloff 0
+
+# This is the yellow-green everglow uranium rod - currently clear yellow like sunlight
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight intensity 4
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight color (0.9, 0.9, 0.6)
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight falloffRate 12
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceIntensity 2.5
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceColor (0.9, 0.9, 0.6)
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceFalloff 5
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceWallIntensityScale 1
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceFloorIntensityScale 2
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceIsDirectional 0
+lightAttribOverride lightingWallNeonTubeWave_neon_greenYellow_lit_designModeLight diffusionSourceDirectionalFalloff 0
+
+# This is the blue-violet everglow uranium rod - currently clear blue like winter day
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight intensity 0.81
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight color (0.89, 0.894, 0.573)
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight falloffRate 0.8
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceIntensity 1.11
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceColor (.89, 0.894, 0.573)
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceFalloff 2
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceWallIntensityScale 1
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceFloorIntensityScale 1
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceIsDirectional 0
+lightAttribOverride lightingWallNeonTubeWave_neon_blueViolet_lit_designModeLight diffusionSourceDirectionalFalloff 0
+
+# this is orange Mr. Lampy McFroglegs used by elves
+
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight intensity 2
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight color (0.9, 0.9, 0.3)
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight falloffRate 1
+lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceIntensity 1
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceColor (0.9, 0.9, 0.3)
+lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceFalloff 2
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceWallIntensityScale 1
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceFloorIntensityScale 1
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceIsDirectional 0
+#lightAttribOverride lightingTableNightClub_glassOuter_orange_lit_designModeLight diffusionSourceDirectionalFalloff 0
+
+
+# Pix-Arm Drafting lamp
+lightAttribOverride lightingTableValue1_light intensity 2
+lightAttribOverride lightingTableValue1_light color (0.678, 0.468, 0.109)
+lightAttribOverride lightingTableValue1_light falloffRate 2
+lightAttribOverride lightingTableValue1_light diffusionSourceIntensity 1
+lightAttribOverride lightingTableValue1_light diffusionSourceColor (0.678, 0.468, 0.109)
+lightAttribOverride lightingTableValue1_light diffusionSourceFalloff 2
+lightAttribOverride lightingTableValue1_light diffusionSourceWallIntensityScale 1
+lightAttribOverride lightingTableValue1_light diffusionSourceFloorIntensityScale 1
+lightAttribOverride lightingTableValue1_light diffusionSourceIsDirectional 1
+lightAttribOverride lightingTableValue1_light diffusionSourceDirectionalFalloff 2
+lightAttribOverride lightingTableValue1_light diffusionSourceMin  (-2,-2)
+lightAttribOverride lightingTableValue1_light diffusionSourceMax (-2,2)
+lightAttribOverride lightingTableValue1_light coneAngle 10
+lightAttribOverride lightingTableValue1_light conePenumbra 10
+
+
+lightAttribOverride lightingTableArtNouveau_light intensity 2
+lightAttribOverride lightingTableArtNouveau_light color (0.9, 0.9, 0.3)
+lightAttribOverride lightingTableArtNouveau_light falloffRate 1
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceIntensity 1
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceColor (0.9, 0.9, 0.3)
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceFalloff 2
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceWallIntensityScale 1
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceFloorIntensityScale 0.5
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceIsDirectional 1
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceDirectionalFalloff 0
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceMin  (0,0)
+lightAttribOverride lightingTableArtNouveau_light diffusionSourceMax (0,4)
+lightAttribOverride lightingTableArtNouveau_light coneAngle 20
+lightAttribOverride lightingTableArtNouveau_light conePenumbra 50
+
+# This is the pink-pink everglow uranium rod
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight intensity 0.55
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight color  (0.878, 0.238, 0.109)
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight falloffRate 1
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight diffusionSourceIntensity 0.8
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight diffusionSourceColor  (0.678, 0.068, 0.109)
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight diffusionSourceFalloff 6
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight diffusionSourceWallIntensityScale 0.8
+lightAttribOverride lightingWallNeonTubeWave_neon_violet_lit_designModeLight diffusionSourceFloorIntensityScale .5
+
+
+# FIREPLACES??
+lightAttribOverride fireplaceHearth_fillLight intensity 0.8
+# lightAttribOverride fireplaceHearth_fillLight color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceHearth_fillLight color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceHearth_fillLight falloffRate 3
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceHearth_fillLight diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceMin  (0,0)
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceMax (0,0)
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceFalloff 6
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceIsDirectional 0
+lightAttribOverride fireplaceHearth_fillLight diffusionSourceDirectionalFalloff 0
+#lightAttribOverride fireplaceHearth_fillLight coneAngle 999
+#lightAttribOverride fireplaceHearth_fillLight conePenumbra 999
+
+lightAttribOverride fireplaceMantle_fillLight intensity 0.8
+# lightAttribOverride fireplaceMantle_fillLight color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceMantle_fillLight color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceMantle_fillLight falloffRate 3
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceMantle_fillLight diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceMin  (0,0)
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceMax (0,0)
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceFalloff 6
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceIsDirectional 0
+lightAttribOverride fireplaceMantle_fillLight diffusionSourceDirectionalFalloff 0
+#lightAttribOverride fireplaceMantle_fillLight coneAngle 999
+#lightAttribOverride fireplaceMantle_fillLight conePenumbra 999
+
+lightAttribOverride fireplaceStove_fillLight intensity 0.8
+# lightAttribOverride fireplaceStove_fillLight color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceStove_fillLight color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceStove_fillLight falloffRate 3
+lightAttribOverride fireplaceStove_fillLight diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceStove_fillLight diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceStove_fillLight diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceStove_fillLight diffusionSourceMin  (0,0)
+lightAttribOverride fireplaceStove_fillLight diffusionSourceMax (0,0)
+lightAttribOverride fireplaceStove_fillLight diffusionSourceFalloff 6
+lightAttribOverride fireplaceStove_fillLight diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceStove_fillLight diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceStove_fillLight diffusionSourceIsDirectional 0
+lightAttribOverride fireplaceStove_fillLight diffusionSourceDirectionalFalloff 0
+#lightAttribOverride fireplaceStove_fillLight coneAngle 999
+#lightAttribOverride fireplaceStove_fillLight conePenumbra 999
+
+
+lightAttribOverride fireplaceHearth_light intensity 6
+# lightAttribOverride fireplaceHearth_light color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceHearth_light color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceHearth_light falloffRate 3
+lightAttribOverride fireplaceHearth_light diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceHearth_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceHearth_light diffusionSourceColor  (0.878, 0.438, 0.109)
+#lightAttribOverride fireplaceHearth_light diffusionSourceMin  (0,0)
+#lightAttribOverride fireplaceHearth_light diffusionSourceMax (0,0)
+lightAttribOverride fireplaceHearth_light diffusionSourceFalloff 6
+lightAttribOverride fireplaceHearth_light diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceHearth_light diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceHearth_light diffusionSourceIsDirectional 1
+lightAttribOverride fireplaceHearth_light diffusionSourceDirectionalFalloff 3
+#lightAttribOverride fireplaceHearth_light coneAngle 999
+#lightAttribOverride fireplaceHearth_light conePenumbra 999
+
+lightAttribOverride fireplaceMantle_light intensity 0.8
+# lightAttribOverride fireplaceMantle_light color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceMantle_light color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceMantle_light falloffRate 3
+lightAttribOverride fireplaceMantle_light diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceMantle_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceMantle_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceMantle_light diffusionSourceMin  (0,0)
+lightAttribOverride fireplaceMantle_light diffusionSourceMax (0,0)
+lightAttribOverride fireplaceMantle_light diffusionSourceFalloff 6
+lightAttribOverride fireplaceMantle_light diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceMantle_light diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceMantle_light diffusionSourceIsDirectional 0
+lightAttribOverride fireplaceMantle_light diffusionSourceDirectionalFalloff 0
+#lightAttribOverride fireplaceMantle_light coneAngle 999
+#lightAttribOverride fireplaceMantle_light conePenumbra 999
+
+lightAttribOverride fireplaceStove_light intensity 0.8
+# lightAttribOverride fireplaceStove_light color (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceStove_light color  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceStove_light falloffRate 3
+lightAttribOverride fireplaceStove_light diffusionSourceIntensity 0.05
+# lightAttribOverride fireplaceStove_light diffusionSourceColor (0.914, 0.551, 0.281)
+lightAttribOverride fireplaceStove_light diffusionSourceColor  (0.878, 0.438, 0.109)
+lightAttribOverride fireplaceStove_light diffusionSourceMin  (0,0)
+lightAttribOverride fireplaceStove_light diffusionSourceMax (0,0)
+lightAttribOverride fireplaceStove_light diffusionSourceFalloff 6
+lightAttribOverride fireplaceStove_light diffusionSourceWallIntensityScale 0.4
+lightAttribOverride fireplaceStove_light diffusionSourceFloorIntensityScale .2
+lightAttribOverride fireplaceStove_light diffusionSourceIsDirectional 0
+lightAttribOverride fireplaceStove_light diffusionSourceDirectionalFalloff 0
+#lightAttribOverride fireplaceStove_light coneAngle 999
+#lightAttribOverride fireplaceStove_light conePenumbra 999
+

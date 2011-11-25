@@ -1,0 +1,87 @@
+######################################################################
+# Light Kelvin Colors
+#
+# 12/6/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+
+define matchflame(lightName)
+#lightAttribOverride &lightName color (0.705,0.529,0.38)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#lightAttribOverride &lightName diffusionSourceColor (0.705,0.529,0.38)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define candleflame(lightName)
+#lightAttribOverride &lightName color (0.721,0.572,0.411)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#lightAttribOverride &lightName diffusionSourceColor (0.721,0.572,0.411)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+# use the below for outdoors
+#lightAttribOverride &lightName diffusionSourceColor (0.678, 0.538, 0.109)
+enddef
+
+#includes posebox candle
+define household(lightName)
+#lightAttribOverride &lightName color (0.733,0.654,0.59)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#lightAttribOverride &lightName diffusionSourceColor (0.733,0.654,0.59)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define highwattage(lightName)
+#lightAttribOverride &lightName color (0.741,0.69,0.633)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#lightAttribOverride &lightName diffusionSourceColor (0.741,0.69,0.633)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+# Fogueria Ponto campfire (lightingFloorGardenTier_light)
+define quartz(lightName)
+#lightAttribOverride &lightName color (0.741,0.717,0.7)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+#lightAttribOverride &lightName diffusionSourceColor (0.741,0.717,0.7)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+# use the below for outdoors
+#lightAttribOverride &lightName diffusionSourceColor (0.678, 0.538, 0.109)
+enddef
+
+define flourescent(lightName)
+#lightAttribOverride &lightName color (0.745,0.729,0.747)
+#lightAttribOverride &lightName diffusionSourceColor (0.745,0.729,0.747)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define halogen(lightName)
+#lightAttribOverride &lightName color (0.725,0.733,0.798)
+#lightAttribOverride &lightName diffusionSourceColor (0.725,0.733,0.798)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define LED(lightName)
+#lightAttribOverride &lightName color (0.682,0.717,0.833)
+#lightAttribOverride &lightName diffusionSourceColor (0.682,0.717,0.833)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define streetlightold(lightName)
+#lightAttribOverride &lightName color (0.945,0.952,0.725)
+#lightAttribOverride &lightName diffusionSourceColor (0.945,0.952,0.725)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+define whiteLight(lightName)
+#lightAttribOverride &lightName color (0.652,0.651,0.650)
+#lightAttribOverride &lightName diffusionSourceColor (0.652,0.651,0.650)
+lightAttribOverride &lightName color (0.778, 0.438, 0.109)
+lightAttribOverride &lightName diffusionSourceColor (0.778, 0.438, 0.109)
+enddef
+
+######################################################################
+# EOF
+######################################################################
