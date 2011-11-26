@@ -1,0 +1,65 @@
+######################################################################
+# Main Routine Call
+#
+# 12/6/2005 (C) GunMod
+# FIN
+######################################################################
+######################################################################
+ignoreErrors true
+setf wConeMul 40
+setf wPenMul  20
+
+wildInclude "Lothere/mod/*.txt"
+
+######################################################################
+# Basic
+include "RLS-BasicDefines.txt"
+include "RLS-Wattage.txt"
+include "RLS-LightKelvin.txt"
+include "RLS-PureColor.txt"
+include "RLS-SoftColor.txt"
+include "RLS-CAS.txt"
+include "RLS-CustomLights.txt"
+######################################################################
+# Light Specific
+include "RLS-Table_Lamps.txt"
+include "RLS-Floor_Lamps.txt"
+include "RLS-Hanging_Lights.txt"
+include "RLS-Wall_Lamps.txt"
+include "RLS-Dance_Lighting.txt"
+include "RLS-Electronics.txt"
+include "RLS-Fire_Effects.txt"
+include "RLS-HotTubs.txt"
+include "RLS-Maxis.txt"
+include "RLS-Misc.txt"
+include "RLS-Neon.txt"
+include "RLS-PhotoBooth.txt"
+include "RLS-PortalLights.txt"
+include "RLS-OutDoor_Lights.txt"
+##include "RLS-color2.txt"
+######################################################################
+# EP/SP packs
+######################################################################
+include "RLSa-EP3_Lights.txt"
+include "RLSa-SP1_Lights.txt"
+include "RLS-dD-BON.txt"
+include "RLS-dD-FREETIME.txt"
+include "RLS-dD-PETS.txt"
+include "RLS-dD-SEASONS.txt"
+include "RLS-dD-Celebration.txt"
+include "RLS-dD-Glamour_Life.txt"
+include "RLS-dD-HM_Fashion.txt"
+include "RLS-dD-KitchenBath.txt"
+include "RLS-dD-Teen.txt"
+include "RLS-dD-IKEA.txt"
+include "RLS-dD-EA_store.txt"
+include "RLS-dD-Extra.txt"
+include "RLS-dD-Apartments.txt"
+include "RLS-dD-Mansion.txt"
+######################################################################
+# Custom Lights: Enable anything here if you have custom light or any other edits in the files.
+######################################################################
+wildInclude "Lothere/mod/*.nlo"
+
+######################################################################
+# EOF
