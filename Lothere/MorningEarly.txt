@@ -1,0 +1,27 @@
+lightingState Spring
+   control -edith true
+
+   light sun      (-0.6, -1.5, 0.58)     (.89, .89, 0.52)     1.13  # direct sunlight
+   
+   light sky      (-1.5, -1.2, 2)        (.87,.85,0.73)    .2
+   light fill1    (-0.6, -1.5, 0.58)     (.87,.95,.63)    .1
+   light fill2    (-10.5, -10.5, -2)     (.8,.8,.6)    .1   #indirect sunlight   
+   
+   # skylight affects indoors colors
+   skylight                      (.89,.88,.62)  0.02 
+
+   light simFill1  (-1.5, -1.2, 2)     (.87,.95,0.73)  .25         #sky
+   light simFill2  (-0.6, -1.5, 0.58)    (.89, .88, 0.62)     0.2   #direct
+   light simFill3  (-5.,-2.5, -5)     (.8,.8,.8)    .15      #floor indirect bounce
+
+ # modifiers <type>         <practical> <diffusion> <practFalloff> <diffFalloff> 
+   modifiers insidePortals        1.8      0.7            .6           1.3
+
+   modifiers outsideObjects    .2      .55     .085 .09
+
+
+   # affects buyable sky and some jewelry
+   environment (.89, .88, 0.72) 1
+      
+end
+
